@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.card {
+    @apply md:flex  md:p-0 shadow-lg  bg-slate-800 rounded-xl p-8 dark:bg-slate-800 mt-2 mb-2;
+
+    transition: ease-in 1ms;
+}
+
+.card__image {
+    @apply  w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto object-cover
+  }
+
+  .card__body {
+    @apply pt-6 md:p-8 md:text-left text-gray-900
+  }
+
+.card__footer{
+    @apply font-medium text-center mt-4
+}
+
+.card__text {
+    @apply text-lg font-medium
+}
+.card__footer-title {
+    @apply text-sky-500 dark:text-sky-400
+}
+
+.card__footer-text {
+    @apply text-gray-700 dark:text-gray-500
+}
+
+.card__dark{
+    @apply dark:bg-gray-800
+}
+
+.card__dark .card__body {
+    @apply text-white
+}
